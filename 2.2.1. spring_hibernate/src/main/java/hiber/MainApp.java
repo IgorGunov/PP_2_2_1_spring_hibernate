@@ -36,19 +36,19 @@ public class MainApp {
         user3.setcar(car3);
         user4.setcar(car4);
 
-        userService.add(user);
-        userService.add(user1);
-        userService.add(user2);
-        userService.add(user3);
-        userService.add(user4);
+        userService.addUser(user);
+        userService.addUser(user1);
+        userService.addUser(user2);
+        userService.addUser(user3);
+        userService.addUser(user4);
 
         List<User> list = userService.getListUsers();
         List<Car> list2 = carService.getListCars();
 
         System.out.println("---------------------------------------");
-        System.out.println(list.get(2).toString());
+        System.out.println(list.get(0).toString());
         System.out.println("---------------------------------------");
-        System.out.println(list2.get(2).toString());
+        System.out.println(list2.get(0).toString());
         System.out.println("---------------------------------------");
         System.out.println(userService.getUserByCar("lancher", 3).toString());
         System.out.println("---------------------------------------");
